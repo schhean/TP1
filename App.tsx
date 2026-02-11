@@ -23,6 +23,8 @@ import {
 } from 'react-native-safe-area-context';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from './src/screen/Home';
+import AddContact from './src/screen/AddContact';
+import Details from './src/screen/DetailContact';
 
 //Page Accueil
 function Accueil() {
@@ -39,8 +41,8 @@ function App() {
     <NavigationContainer>
       <Tab.Navigator>
         <Tab.Screen name="Accueil" component={HomeScreen} />
-        <Tab.Screen name="Ajouter contact" component={Accueil} />
-        <Tab.Screen name="Détail contact" component={Accueil} />
+        <Tab.Screen name="Ajouter contact" component={AddContact} />
+        <Tab.Screen name="Détail contact" component={Details} />
       </Tab.Navigator>
     </NavigationContainer>
   );
